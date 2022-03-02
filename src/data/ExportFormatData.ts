@@ -50,5 +50,11 @@ export const ExportFormatData: ExportFormatDataMap = {
             type: AnnotationFormatType.JSON,
             label: "Single JSON file."
         }
+    ],
+    "ELLIPSE": [
+        {
+            type: AnnotationFormatType.CSV,
+            label: "Single CSV file."
+        }
     ]
 }

@@ -23,5 +23,6 @@ export const ImportFormatData: ImportFormatDataMap = {
             label: "Single file in COCO JSON format."
         }
     ],
-    "IMAGE RECOGNITION": []
+    "IMAGE RECOGNITION": [],
+    "ELLIPSE": []
 }

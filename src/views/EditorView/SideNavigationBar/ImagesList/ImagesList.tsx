@@ -56,7 +56,7 @@ class ImagesList extends React.Component<IProps, IState> {
         })
     };
 
-    private isImageChecked = (index:number): boolean => {
+    private isImageChecked = (index:number): any => {
         const imageData = this.props.imagesData[index]
         switch (this.props.activeLabelType) {
             case LabelType.LINE:

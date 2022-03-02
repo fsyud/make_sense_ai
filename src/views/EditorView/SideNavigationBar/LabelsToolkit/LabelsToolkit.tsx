@@ -21,6 +21,7 @@ import { Settings } from "../../../../settings/Settings";
 import RectLabelsList from "../RectLabelsList/RectLabelsList";
 import PointLabelsList from "../PointLabelsList/PointLabelsList";
 import PolygonLabelsList from "../PolygonLabelsList/PolygonLabelsList";
+import EllipseLabelList from "../EllipseLabelList/EllipseLabelList";
 import { ContextManager } from "../../../../logic/context/ContextManager";
 import { ContextType } from "../../../../data/enums/ContextType";
 import { EventType } from "../../../../data/enums/EventType";
@@ -180,6 +181,9 @@ class LabelsToolkit extends React.Component<IProps, IState> {
               }}
               imageData={imagesData[activeImageIndex]}
             />
+          )}
+          {labelType === LabelType.ELLIPSE && (
+            <EllipseLabelList />
           )}
         </div>
       );
